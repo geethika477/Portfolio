@@ -301,13 +301,13 @@ if selected == "Home":
 
             <div class="social-buttons">
 
-            <a href="https://github.com"
+            <a href="https://github.com/geethika477"
             target="_blank"
             class="social-btn">
             GitHub
             </a>
 
-            <a href="https://linkedin.com"
+            <a href="www.linkedin.com/in/geethika-sai-kethagani-731808333"
             target="_blank"
             class="social-btn">
             LinkedIn
