@@ -300,7 +300,7 @@ selected = option_menu(
             "font-size": "16px",
             "font-weight": "600",
             "text-align": "center",
-            "color": "#0E488B",
+            "color": "#2C77CE",
             "border-radius": "12px",
             "margin": "0px 5px",
         },
