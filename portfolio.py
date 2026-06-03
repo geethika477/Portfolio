@@ -96,6 +96,7 @@ st.markdown(
         height: 100%;
         backdrop-filter: blur(14px);
         animation: fadeUp 1s ease;
+        min-height: 367px;
     }}
 
     .skill-card:hover {{
@@ -135,7 +136,7 @@ st.markdown(
     }}
 
     .name-title {{
-        font-size: 65px;
+        font-size: 59px;
         font-weight: 800;
         color: white;
         line-height: 1;
@@ -210,6 +211,21 @@ st.markdown(
     .floating {{
         animation: floating 4s ease-in-out infinite;
     }}
+    .edu-card{{
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(14px);
+        border-radius: 25px;
+        padding: 30px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(255,255,255,0.08);
+        transition: 0.4s;
+    }}
+
+    .edu-card:hover{{
+        transform: translateY(-8px);
+        border: 1px solid #38bdf8;
+        box-shadow: 0px 0px 30px rgba(56,189,248,0.35);
+    }}
 
     .gallery-image img {{
         border-radius: 20px;
@@ -251,6 +267,12 @@ st.markdown(
             transform: translateY(0px);
         }}
     }}
+    .main-card-spacing{{
+        text-align: right;
+    }}
+    .st-emotion-cache-1r6slb0{{
+    background: transparent !important;
+    }}
 
     </style>
 
@@ -264,6 +286,30 @@ selected = option_menu(
     options=["Home", "Skills", "Projects", "Gallery"],
     icons=["house", "code-slash", "kanban", "image"],
     orientation="horizontal",
+
+    styles={
+        "container": {
+            "padding": "10px",
+            "background-color": "rgba(255,255,255,0.05)",
+            "border-radius": "20px",
+            "backdrop-filter": "blur(14px)",
+            "border": "1px solid rgba(255,255,255,0.08)"
+        },
+
+        "nav-link": {
+            "font-size": "16px",
+            "font-weight": "600",
+            "text-align": "center",
+            "color": "#0E488B",
+            "border-radius": "12px",
+            "margin": "0px 5px",
+        },
+
+        "nav-link-selected": {
+            "background": "linear-gradient(135deg,#0ea5e9,#6366f1)",
+            "color": "white",
+        }
+    }
 )
 
 
@@ -280,22 +326,19 @@ if selected == "Home":
             <div class="name-title">
             Hi, I'm
             <span class="gradient-text">
-            Geethika
+            Geethika Kethagani
             </span>
             </div>
 
             <div class="hero-subtitle">
-            B.Tech CSE Student • Python Developer • Streamlit Builder
+            B.Tech CSE Student • Python Developer • Aspiring Software Engineer
             </div>
 
             <div class="hero-description">
+           
+            Passionate about software development and problem-solving through technology.
 
-            Passionate about building visually polished and interactive
-            applications using Python and Streamlit.
-
-            Focused on dashboards, modern UI design, analytics,
-            productivity systems, and solving real-world problems
-            through software.
+            I build projects using Python, Streamlit, and SQL, and I'm actively exploring Machine Learning. I enjoy turning ideas into practical applications and continuously improving my technical and problem-solving skills.
 
             </div>
 
@@ -313,7 +356,8 @@ if selected == "Home":
             LinkedIn
             </a>
 
-            <a href="mailto:example@gmail.com"
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=geethikasai77@gmail.com"
+            target="_blank"
             class="social-btn">
             Contact
             </a>
@@ -349,53 +393,38 @@ if selected == "Home":
         unsafe_allow_html=True
     )
 
-    st.markdown(
-        """
-        <div class="main-card">
-
-        <h2>NSRIT</h2>
-
-        <p>
-        B.Tech in Computer Science and Engineering
-        </p>
-
-        <p>
-        2024 - Present
-        </p>
-
-        <hr>
-
-        <h2>Intermediate</h2>
-
-        <p>
-        Your College Name
-        </p>
-
-        <p>
-        2022 - 2024
-        </p>
-
-        <hr>
-
-        <h2>Schooling</h2>
-
-        <p>
-        Your School Name
-        </p>
-
-        <p>
-        2021 - 2022
-        </p>
-
+    st.markdown("""
+        <div class="edu-card">
+        <h2>🎓 B.Tech in Computer Science & Engineering</h2>
+        <p><strong>Nadimpalli Satyanarayana Raju Institute of Technology</strong></p>
+        <p>2024 - 2028</p>
+        <p>CGPA: <strong>9.23</strong></p>
         </div>
-        """,
-        unsafe_allow_html=True
-    )
+        """, unsafe_allow_html=True)
+
+    st.markdown("""
+        <div class="edu-card">
+        <h2>📚 Intermediate</h2>
+        <p><strong>Dalton Junior College</strong></p>
+        <p>2022 – 2024</p>
+        <p>Percentage: <strong>89%</strong></p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("""
+        <div class="edu-card">
+        <h2>🏫 Secondary Education</h2>
+        <p><strong>Sri T.V.S. Rao Sri Krishna Vidya Mandir (CBSE)</strong></p>
+        <p>2021 – 2022</p>
+        <p>Percentage: <strong>82%</strong></p>
+        </div>
+        """, unsafe_allow_html=True)
+
     st.write("")
     st.write("")
     with open("Geethika_Resume.pdf","rb") as f:
         resume = f.read()
-    c1, c2, c3 = st.columns([2,2,1])
+    c1, c2, c3 = st.columns([2.2,2,1])
     with c2:
         st.download_button(
             label="Download Resume",
@@ -464,14 +493,15 @@ if selected == "Skills":
             """
             <div class="skill-card">
 
-            <h2>Tools</h2>
+            <h2>Web Technologies & Tools</h2>
 
             <ul>
+                <li>HTML</li>
+                <li>CSS</li>
                 <li>Git</li>
                 <li>GitHub</li>
                 <li>VS Code</li>
                 <li>Jupyter Notebook</li>
-                <li>Problem Solving</li>
             </ul>
 
             </div>
