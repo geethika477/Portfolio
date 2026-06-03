@@ -307,7 +307,7 @@ if selected == "Home":
             GitHub
             </a>
 
-            <a href="www.linkedin.com/in/geethika-sai-kethagani-731808333"
+            <a href="https://www.linkedin.com/in/geethika-sai-kethagani-731808333/"
             target="_blank"
             class="social-btn">
             LinkedIn
