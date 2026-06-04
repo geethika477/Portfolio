@@ -273,18 +273,92 @@ st.markdown(
     .st-emotion-cache-1r6slb0{{
     background: transparent !important;
     }}
-    @media (max-width: 768px){{
+    /* ========================= */
+/* MOBILE RESPONSIVE DESIGN */
+/* ========================= */
 
-    div[data-testid="stHorizontalBlock"]{{
-        flex-wrap: wrap !important;
+@media (max-width: 768px) {{
+
+    .hero-card,
+    .main-card,
+    .project-card,
+    .skill-card,
+    .edu-card {{
+        padding: 20px !important;
+        border-radius: 20px !important;
     }}
 
-    .nav-link{{
-        font-size: 12px !important;
-        padding: 8px !important;
-        min-width: 120px !important;
+    .name-title {{
+        font-size: 36px !important;
+        line-height: 1.15 !important;
     }}
+
+    .hero-subtitle {{
+        font-size: 17px !important;
+        line-height: 1.5;
     }}
+
+    .hero-description {{
+        font-size: 15px !important;
+        line-height: 1.7;
+    }}
+
+    .section-title {{
+        font-size: 28px !important;
+        text-align: center;
+    }}
+
+    .profile-ring {{
+        width: min(220px, 70vw) !important;
+        height: min(220px, 70vw) !important;
+    }}
+
+    .profile-wrapper img {{
+        width: calc(min(220px, 70vw) - 12px) !important;
+        height: calc(min(220px, 70vw) - 12px) !important;
+    }}
+
+    .social-buttons {{
+        justify-content: center;
+    }}
+
+    .social-btn {{
+        font-size: 14px !important;
+        padding: 10px 16px !important;
+    }}
+
+    .skill-card {{
+        min-height: auto !important;
+    }}
+
+    h1, h2, h3 {{
+        word-break: break-word;
+    }}
+}}
+
+@media (max-width: 480px) {{
+
+    .name-title {{
+        font-size: 30px !important;
+    }}
+
+    .hero-subtitle {{
+        font-size: 15px !important;
+    }}
+
+    .hero-description {{
+        font-size: 14px !important;
+    }}
+
+    .section-title {{
+        font-size: 24px !important;
+    }}
+
+    .social-btn {{
+        width: 100%;
+        text-align: center;
+    }}
+}}
 
     </style>
 
@@ -296,7 +370,6 @@ st.markdown(
 selected = option_menu(
     menu_title=None,
     options=["Home", "Skills", "Projects", "Gallery"],
-    icons=["house", "code-slash", "kanban", "image"],
     orientation="horizontal",
 
     styles={
