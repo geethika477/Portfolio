@@ -136,7 +136,7 @@ st.markdown(
     }}
 
     .name-title {{
-        font-size: 59px;
+        font-size: clamp(34px, 6vw, 59px);
         font-weight: 800;
         color: white;
         line-height: 1;
@@ -272,6 +272,18 @@ st.markdown(
     }}
     .st-emotion-cache-1r6slb0{{
     background: transparent !important;
+    }}
+    @media (max-width: 768px){{
+
+    div[data-testid="stHorizontalBlock"]{{
+        flex-wrap: wrap !important;
+    }}
+
+    .nav-link{{
+        font-size: 12px !important;
+        padding: 8px !important;
+        min-width: 120px !important;
+    }}
     }}
 
     </style>
