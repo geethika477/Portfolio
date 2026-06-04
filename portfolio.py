@@ -359,6 +359,18 @@ st.markdown(
         text-align: center;
     }}
 }}
+    @media (max-width: 768px){{
+
+    .hero-mobile-order {{
+        display: flex;
+        flex-direction: column;
+    }}
+
+    .hero-mobile-order > div:nth-child(2) {{
+        order: -1;
+        margin-bottom: 20px;
+    }}
+}}
 
     </style>
 
@@ -373,6 +385,9 @@ selected = option_menu(
     orientation="horizontal",
 
     styles={
+        "icon": {
+            "display": "none"
+        },
         "container": {
             "padding": "10px",
             "background-color": "rgba(255,255,255,0.05)",
@@ -400,7 +415,11 @@ selected = option_menu(
 
 if selected == "Home":
 
+    st.markdown('<div class="hero-mobile-order">', unsafe_allow_html=True)
+
     col1, col2 = st.columns([1.7,1])
+
+    st.markdown('</div>', unsafe_allow_html=True)
 
     with col1:
 
@@ -441,8 +460,8 @@ if selected == "Home":
             LinkedIn
             </a>
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=geethikasai77@gmail.com"
-            target="_blank"
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSerF_Z5134Pge8yutzK3pTukwxCUF82FDJO6o7yB2qqd1deng/viewform?usp=publish-editor" 
+            target="_blank" 
             class="social-btn">
             Contact
             </a>
