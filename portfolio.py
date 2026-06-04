@@ -371,6 +371,49 @@ st.markdown(
         margin-bottom: 20px;
     }}
 }}
+    /* ========================= */
+    /* PROJECT BUTTONS (GLOW UI) */
+    /* ========================= */
+
+    .project-buttons {{
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+    }}
+
+    .glow-btn {{
+        flex: 1;
+        text-align: center;
+        padding: 12px 16px;
+        border-radius: 14px;
+        text-decoration: none;
+        font-weight: 600;
+        color: white !important;
+        background: linear-gradient(135deg,#0ea5e9,#6366f1);
+        box-shadow: 0 0 15px rgba(14,165,233,0.25);
+        transition: all 0.3s ease;
+        display: inline-block;
+    }}
+
+    /* Hover glow effect */
+    .glow-btn:hover {{
+        transform: translateY(-6px) scale(1.03);
+        box-shadow: 
+            0 0 20px rgba(14,165,233,0.6),
+            0 0 40px rgba(99,102,241,0.4);
+    }}
+
+    /* GitHub specific (darker glow tone) */
+    .glow-btn.github {{
+        background: linear-gradient(135deg,#1f2937,#111827);
+        box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }}
+
+    .glow-btn.github:hover {{
+        box-shadow:
+            0 0 20px rgba(0,0,0,0.7),
+            0 0 35px rgba(56,189,248,0.25);
+    }}
 
     </style>
 
@@ -656,7 +699,7 @@ if selected == "Projects":
         [
             "Mini Projects",
             "Currently Working On",
-            "Streamlit Projects"
+            "Main Projects"
         ]
     )
 
@@ -666,13 +709,22 @@ if selected == "Projects":
             """
             <div class="project-card">
 
-            <h2>Food Ordering System</h2>
+            <h2>QR Code Generator (Python)</h2>
 
             <p>
-            C programming based application for handling orders,
-            menu systems, and billing.
+            A Python-powered QR Code Generator that allows users to instantly create QR codes from text, links, or custom input. Built with a focus on simplicity and usability, the tool generates high-quality scannable QR images that can be used for sharing information, websites, or digital content. This project demonstrates practical use of Python libraries for automation and real-world utility applications.
             </p>
+            <div class="project-buttons">
 
+            <a href="https://github.com/geethika477/QR_Code_Generator" target="_blank" class="glow-btn github">
+            🔗 GitHub
+            </a>
+
+            <a href="https://github.com/geethika477/QR_Code_Generator/blob/master/README.md" target="_blank" class="glow-btn github">
+            Description
+            </a>
+            
+            </div>
             </div>
             """,
             unsafe_allow_html=True
@@ -682,13 +734,23 @@ if selected == "Projects":
             """
             <div class="project-card">
 
-            <h2>Expense Tracker</h2>
+            <h2>Voice-to-Text Converter</h2>
 
             <p>
-            Expense management dashboard with analytics,
-            charts, and financial insights.
+            A simple Python desktop app that converts speech to text. You can record your voice or upload a .wav file, and it transcribes it for you. Built with Tkinter, SpeechRecognition, PyAudio, and Google Web Speech API to explore how voice recognition works in desktop apps.
             </p>
 
+            <div class="project-buttons">
+
+            <a href="https://github.com/geethika477/Speech_to_text_Converter" target="_blank" class="glow-btn github">
+            🔗 GitHub
+            </a>
+
+            <a href="https://github.com/geethika477/Speech_to_text_Converter/blob/master/README.md" target="_blank" class="glow-btn github">
+            Description
+            </a>
+
+            </div>
             </div>
             """,
             unsafe_allow_html=True
@@ -700,28 +762,18 @@ if selected == "Projects":
             """
             <div class="project-card">
 
-            <h2>DefenderX</h2>
-
-            <p>
-            Cybercrime awareness platform for detecting
-            fraudulent links and suspicious numbers.
-            </p>
-
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-        st.markdown(
-            """
-            <div class="project-card">
-
             <h2>Professional Portfolio</h2>
 
             <p>
             Modern interactive Streamlit portfolio with animations,
             glassmorphism UI, and responsive sections.
             </p>
+            <div class="project-buttons">
+
+            <a href="https://github.com/geethika477/Portfolio" target="_blank" class="glow-btn github">
+            🔗 GitHub
+            </a>
+            </div>
 
             </div>
             """,
@@ -734,33 +786,31 @@ if selected == "Projects":
             """
             <div class="project-card">
 
-            <h2>Analytics Dashboard</h2>
+            <h2>Leetcode Tracker</h2>
 
             <p>
-            Interactive dashboard with visualizations,
-            charts, and data-driven insights.
+            A LeetCode Tracker application designed to help users systematically track their coding practice and problem-solving progress. It records solved problems, organizes practice history, and encourages consistency in Data Structures and Algorithms preparation. This project focuses on productivity, habit-building, and structured learning.
             </p>
+            <div class="project-buttons">
+
+            <a href="https://github.com/geethika477/Leetcode_Tracker" target="_blank" class="glow-btn github">
+            🔗 GitHub
+            </a>
+
+            <a href="https://github.com/geethika477/Leetcode_Tracker/blob/master/README.md" target="_blank" class="glow-btn github">
+            Description
+            </a>
+            <a href="https://leetcode-trackerr.streamlit.app/" target="_blank" class="glow-btn">
+            Live Demo
+            </a>
+
+            </div>
 
             </div>
             """,
             unsafe_allow_html=True
         )
 
-        st.markdown(
-            """
-            <div class="project-card">
-
-            <h2>Image Editor</h2>
-
-            <p>
-            Streamlit-based image processing tool supporting
-            multiple operations and effects.
-            </p>
-
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
 
 if selected == "Gallery":
 
