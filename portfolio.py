@@ -226,6 +226,20 @@ st.markdown(
         border: 1px solid #38bdf8;
         box-shadow: 0px 0px 30px rgba(56,189,248,0.35);
     }}
+    .cert-btn {{
+        padding: 6px 18px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white !important;
+        background: linear-gradient(135deg,#0ea5e9,#6366f1);
+        font-weight: 600;
+        transition: 0.3s;
+    }}
+
+    .cert-btn:hover {{
+        transform: translateY(-3px);
+        box-shadow: 0 0 20px rgba(56,189,248,0.5);
+    }}
 
     .gallery-image img {{
         border-radius: 20px;
@@ -668,21 +682,46 @@ if selected == "Skills":
         unsafe_allow_html=True
     )
 
-    st.markdown(
-        """
-        <div class="main-card">
+    certifications = [
+    ("Python Zero To Hero (Udemy)", "https://www.udemy.com/certificate/UC-ec7fe6c8-0d99-434f-b88a-7dadaa0c793b/"),
+    ("Joy Of Computing Using Python (NPTEL)", "https://www.hackerrank.com/certificates/iframe/d830fd3f0af7"),
+    ("Python Basic (HackerRank)", "https://drive.google.com/file/d/1g0_TJHe8QgiyjcdiTm2AUfYHBN8M0GWE/view?usp=sharing"),
+]
 
-        <ul>
-            <li>Python Zero To Hero</li>
-            <li>NPTEL Joy Of Computing Using Python</li>
-            <li>HackerRank Python Certificate</li>
-        </ul>
+    for cert, link in certifications:
+        c1, c2 = st.columns([5,1])
 
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+        with c1:
+            st.write(f"✅ {cert}")
 
+        with c2:
+            st.markdown(f"""
+            <a href="{link}" target="_blank" class="cert-btn">
+                View
+            </a>
+            """, unsafe_allow_html=True)
+
+    with st.expander("View all certifications"):
+
+        certifications = [
+        ("Excel for Beginners (Udemy)", "https://www.udemy.com/certificate/UC-104c338b-5a59-4ee5-aca9-bafe36977954/"),
+        ("SQL Foundations (Microsoft)", "https://coursera.org/share/e1eacb69b8257a29d684e7cec14cd2c7"),
+        ("Machine Learning Introduction for Everyone (IBM)", "https://coursera.org/share/7848bc4eb91e1006dccb803dcd8d837f"),
+        ("Pandas (Kaggle)","https://www.kaggle.com/learn/certification/geethikasaikethagani/pandas")
+        ]
+
+        for cert, link in certifications:
+            c1, c2 = st.columns([5,1])
+
+            with c1:
+                st.write(f"✅ {cert}")
+
+            with c2:
+                st.markdown(f"""
+                <a href="{link}" target="_blank" class="cert-btn">
+                    View
+                </a>
+                """, unsafe_allow_html=True)
 
 if selected == "Projects":
 
