@@ -657,7 +657,7 @@ if selected == "Skills":
             <h2>Web Technologies & Tools</h2>
 
             <ul>
-                <li>HTML</li>
+                <li>HTML5</li>
                 <li>CSS</li>
                 <li>Git</li>
                 <li>GitHub</li>
