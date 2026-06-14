@@ -850,6 +850,32 @@ if selected == "Projects":
             unsafe_allow_html=True
         )
 
+        st.markdown(
+            """
+            <div class="project-card">
+
+            <h2>Youtube Clone</h2>
+
+            <p>
+            Developed a responsive YouTube clone using HTML and CSS, replicating the core interface of YouTube. Implemented CSS Grid and Flexbox for structured layouts, responsive design principles for different screen sizes, and interactive UI components for an enhanced user experience.
+            </p>
+            <div class="project-buttons">
+
+            <a href="https://github.com/geethika477/Youtube_Clone" target="_blank" class="glow-btn github">
+            🔗 GitHub
+            </a>
+
+            <a href="https://geethika477.github.io/Youtube_Clone/" target="_blank" class="glow-btn">
+            Live Demo
+            </a>
+
+            </div>
+
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
 
 if selected == "Gallery":
 
