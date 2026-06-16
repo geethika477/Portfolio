@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+<img width="1918" height="1078" alt="Screenshot 2026-06-15 222557" src="https://github.com/user-attachments/assets/365b3ff0-21ff-4bb4-98ce-ce17a62d02f9" /><img width="1918" height="1078" alt="Screenshot 2026-06-15 222557" src="https://github.com/user-attachments/assets/530979f9-2b5b-4ee6-831f-131c19b53113" /># Personal Portfolio Website
 
 A modern personal portfolio website developed using Streamlit with custom HTML and CSS components to create a visually appealing and interactive user interface.
 
@@ -53,11 +53,18 @@ streamlit run portfolio.py
 
 * Home section
 <img width="1918" height="1078" alt="Screenshot 2026-06-15 222456" src="https://github.com/user-attachments/assets/7dd814d6-eb19-4e25-9be9-f5c14b2dd712" />
+<img width="1918" height="1078" alt="Screenshot 2026-06-15 222518" src="https://github.com/user-attachments/assets/b7c0d6e6-19b1-4e06-aaea-8420ef44429b" />
+<img width="1918" height="1078" alt="Screenshot 2026-06-15 222532" src="https://github.com/user-attachments/assets/37cc3fe8-0b84-4298-9303-c799bb2bd075" />
 
-* About section
 * Projects section
+  <img width="1918" height="1078" alt="Screenshot 2026-06-15 222617" src="https://github.com/user-attachments/assets/9196a03f-cdec-420a-ac1f-ae8ceb50306b" />
+
 * Skills section
-* Contact section
+  <img width="1918" height="1078" alt="Screenshot 2026-06-15 222557" src="https://github.com/user-attachments/assets/1b3c7f9a-b7cf-44f9-ac7b-fd1bfef0257d" />
+
+* Achievements section
+  <img width="1918" height="1078" alt="Screenshot 2026-06-15 222647" src="https://github.com/user-attachments/assets/0142005b-7c5e-409d-9d26-bc0108a740a9" />
+
 
 ## Future Improvements
 
