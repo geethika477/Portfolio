@@ -1,4 +1,4 @@
-<img width="1918" height="1078" alt="Screenshot 2026-06-15 222557" src="https://github.com/user-attachments/assets/365b3ff0-21ff-4bb4-98ce-ce17a62d02f9" /><img width="1918" height="1078" alt="Screenshot 2026-06-15 222557" src="https://github.com/user-attachments/assets/530979f9-2b5b-4ee6-831f-131c19b53113" /># Personal Portfolio Website
+# Personal Portfolio Website
 
 A modern personal portfolio website developed using Streamlit with custom HTML and CSS components to create a visually appealing and interactive user interface.
 
