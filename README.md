@@ -56,11 +56,17 @@ streamlit run portfolio.py
 <img width="1918" height="1078" alt="Screenshot 2026-06-15 222518" src="https://github.com/user-attachments/assets/b7c0d6e6-19b1-4e06-aaea-8420ef44429b" />
 <img width="1918" height="1078" alt="Screenshot 2026-06-15 222532" src="https://github.com/user-attachments/assets/37cc3fe8-0b84-4298-9303-c799bb2bd075" />
 
+
+
 * Projects section
   <img width="1918" height="1078" alt="Screenshot 2026-06-15 222617" src="https://github.com/user-attachments/assets/9196a03f-cdec-420a-ac1f-ae8ceb50306b" />
 
+
+
 * Skills section
   <img width="1918" height="1078" alt="Screenshot 2026-06-15 222557" src="https://github.com/user-attachments/assets/1b3c7f9a-b7cf-44f9-ac7b-fd1bfef0257d" />
+
+
 
 * Achievements section
   <img width="1918" height="1078" alt="Screenshot 2026-06-15 222647" src="https://github.com/user-attachments/assets/0142005b-7c5e-409d-9d26-bc0108a740a9" />
