@@ -801,15 +801,14 @@ if selected == "Projects":
             """
             <div class="project-card">
 
-            <h2>Professional Portfolio</h2>
+            <h2>MindMate</h2>
 
             <p>
-            Modern interactive Streamlit portfolio with animations,
-            glassmorphism UI, and responsive sections.
+            MindMate is an AI-powered mental wellness companion that provides supportive conversations, mood tracking, journaling, and personalized wellness suggestions in a safe and user-friendly environment.
             </p>
             <div class="project-buttons">
 
-            <a href="https://github.com/geethika477/Portfolio" target="_blank" class="glow-btn github">
+            <a href="https://github.com/geethika477/MindMate" target="_blank" class="glow-btn github">
             🔗 GitHub
             </a>
             </div>
@@ -841,6 +840,27 @@ if selected == "Projects":
             </a>
             <a href="https://leetcode-trackerr.streamlit.app/" target="_blank" class="glow-btn">
             Live Demo
+            </a>
+
+            </div>
+
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        st.markdown(
+            """
+            <div class="project-card">
+
+            <h2>ImpactLens</h2>
+
+            <p>
+            ImpactLens is an AI-powered social impact platform that analyzes and categorizes community issues, helping connect them with the organizations best equipped to address them. The platform aims to make problem reporting, issue identification, and NGO engagement more efficient and accessible.
+            </p>
+            <div class="project-buttons">
+
+            <a href="https://github.com/geethika477/ImpactLens" target="_blank" class="glow-btn github">
+            🔗 GitHub
             </a>
 
             </div>
