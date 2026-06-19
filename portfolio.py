@@ -862,6 +862,9 @@ if selected == "Projects":
             <a href="https://github.com/geethika477/ImpactLens" target="_blank" class="glow-btn github">
             🔗 GitHub
             </a>
+            <a href="https://github.com/geethika477/ImpactLens/blob/main/README.md" target="_blank" class="glow-btn github">
+            Description
+            </a>
 
             </div>
 
