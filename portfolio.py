@@ -684,8 +684,8 @@ if selected == "Skills":
 
     certifications = [
     ("Python Zero To Hero (Udemy)", "https://www.udemy.com/certificate/UC-ec7fe6c8-0d99-434f-b88a-7dadaa0c793b/"),
-    ("Joy Of Computing Using Python (NPTEL)", "https://www.hackerrank.com/certificates/iframe/d830fd3f0af7"),
-    ("Python Basic (HackerRank)", "https://drive.google.com/file/d/1g0_TJHe8QgiyjcdiTm2AUfYHBN8M0GWE/view?usp=sharing"),
+    ("Joy Of Computing Using Python (NPTEL)", "https://drive.google.com/file/d/1g0_TJHe8QgiyjcdiTm2AUfYHBN8M0GWE/view?usp=sharing"),
+    ("Python Basic (HackerRank)","https://www.hackerrank.com/certificates/iframe/d830fd3f0af7") 
 ]
 
     for cert, link in certifications:
@@ -804,7 +804,7 @@ if selected == "Projects":
             <h2>MindMate</h2>
 
             <p>
-            MindMate is an AI-powered mental wellness companion that provides supportive conversations, mood tracking, journaling, and personalized wellness suggestions in a safe and user-friendly environment.
+            MindMate is an AI-powered mental wellness companion designed to provide users with a safe and supportive space for conversation. The application engages users in meaningful discussions, offers emotional support, and provides personalized wellness suggestions based on their concerns and feelings. By encouraging self-reflection and positive coping strategies, MindMate aims to make mental health support more accessible, approachable, and available whenever users need it.
             </p>
             <div class="project-buttons">
 
