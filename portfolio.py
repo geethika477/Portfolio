@@ -847,12 +847,15 @@ if selected == "Projects":
             <h2>MindMate</h2>
 
             <p>
-           A Generative AI-powered wellness platform using Gemini API that enables mood tracking, journaling, and supportive AI conversations with personalized emotional insights.
+            A Generative AI-powered wellness platform using Gemini API that enables mood tracking, journaling, and supportive AI conversations with personalized emotional insights.
             </p>
             <div class="project-buttons">
 
             <a href="https://github.com/geethika477/MindMate" target="_blank" class="glow-btn github">
             🔗 GitHub
+            </a>
+            <a href="https://github.com/geethika477/MindMate/blob/master/README.md" target="_blank" class="glow-btn github">
+            Description
             </a>
             <a href="https://mindmate-p8pcsav83xbuv4hchcbyxn.streamlit.app/" target="_blank" class="glow-btn">
             Live Demo
