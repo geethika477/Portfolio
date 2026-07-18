@@ -743,6 +743,32 @@ if selected == "Projects":
     )
 
     with tab1:
+        
+        st.markdown(
+            """
+            <div class="project-card">
+
+            <h2>Youtube Clone</h2>
+
+            <p>
+            Developed a responsive YouTube clone using HTML and CSS, replicating the core interface of YouTube. Implemented CSS Grid and Flexbox for structured layouts, responsive design principles for different screen sizes, and interactive UI components for an enhanced user experience.
+            </p>
+            <div class="project-buttons">
+
+            <a href="https://github.com/geethika477/Youtube_Clone" target="_blank" class="glow-btn github">
+            🔗 GitHub
+            </a>
+
+            <a href="https://geethika477.github.io/Youtube_Clone/" target="_blank" class="glow-btn">
+            Live Demo
+            </a>
+
+            </div>
+
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
         st.markdown(
             """
@@ -796,6 +822,23 @@ if selected == "Projects":
         )
 
     with tab2:
+        st.markdown(
+        """
+        <div class="project-card">
+
+        <h2>🚧 Currently Building</h2>
+
+        <p>
+        No active projects at the moment.
+        Stay tuned for upcoming AI, ML, and software projects!
+        </p>
+
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+    
+    with tab3:
 
         st.markdown(
             """
@@ -804,12 +847,15 @@ if selected == "Projects":
             <h2>MindMate</h2>
 
             <p>
-            MindMate is an AI-powered mental wellness companion designed to provide users with a safe and supportive space for conversation. The application engages users in meaningful discussions, offers emotional support, and provides personalized wellness suggestions based on their concerns and feelings. By encouraging self-reflection and positive coping strategies, MindMate aims to make mental health support more accessible, approachable, and available whenever users need it.
+           A Generative AI-powered wellness platform using Gemini API that enables mood tracking, journaling, and supportive AI conversations with personalized emotional insights.
             </p>
             <div class="project-buttons">
 
             <a href="https://github.com/geethika477/MindMate" target="_blank" class="glow-btn github">
             🔗 GitHub
+            </a>
+            <a href="https://mindmate-p8pcsav83xbuv4hchcbyxn.streamlit.app/" target="_blank" class="glow-btn">
+            Live Demo
             </a>
             </div>
 
@@ -817,8 +863,31 @@ if selected == "Projects":
             """,
             unsafe_allow_html=True
         )
+         
+        st.markdown(
+            """
+            <div class="project-card">
 
-    with tab3:
+            <h2>ImpactLens</h2>
+
+            <p>
+            An AI-driven platform that bridges the gap between citizens and NGOs by enabling issue reporting, NGO discovery, and intelligent classification of social problems. Integrated TensorFlow.js-based image classification and Hugging Face AI pipelines to analyze user inputs and provide meaningful insights, helping connect communities with relevant support organizations.
+            </p>
+            <div class="project-buttons">
+
+            <a href="https://github.com/geethika477/ImpactLens" target="_blank" class="glow-btn github">
+            🔗 GitHub
+            </a>
+            <a href="https://github.com/geethika477/ImpactLens/blob/main/README.md" target="_blank" class="glow-btn github">
+            Description
+            </a>
+
+            </div>
+
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
         st.markdown(
             """
@@ -848,56 +917,8 @@ if selected == "Projects":
             """,
             unsafe_allow_html=True
         )
-        st.markdown(
-            """
-            <div class="project-card">
+       
 
-            <h2>ImpactLens</h2>
-
-            <p>
-            ImpactLens is an AI-powered social impact platform that analyzes and categorizes community issues, helping connect them with the organizations best equipped to address them. The platform aims to make problem reporting, issue identification, and NGO engagement more efficient and accessible.
-            </p>
-            <div class="project-buttons">
-
-            <a href="https://github.com/geethika477/ImpactLens" target="_blank" class="glow-btn github">
-            🔗 GitHub
-            </a>
-            <a href="https://github.com/geethika477/ImpactLens/blob/main/README.md" target="_blank" class="glow-btn github">
-            Description
-            </a>
-
-            </div>
-
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-        st.markdown(
-            """
-            <div class="project-card">
-
-            <h2>Youtube Clone</h2>
-
-            <p>
-            Developed a responsive YouTube clone using HTML and CSS, replicating the core interface of YouTube. Implemented CSS Grid and Flexbox for structured layouts, responsive design principles for different screen sizes, and interactive UI components for an enhanced user experience.
-            </p>
-            <div class="project-buttons">
-
-            <a href="https://github.com/geethika477/Youtube_Clone" target="_blank" class="glow-btn github">
-            🔗 GitHub
-            </a>
-
-            <a href="https://geethika477.github.io/Youtube_Clone/" target="_blank" class="glow-btn">
-            Live Demo
-            </a>
-
-            </div>
-
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
 
 
 if selected == "Gallery":
